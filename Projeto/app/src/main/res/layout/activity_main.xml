@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/IDNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/IDIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Idade"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/IDTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tipo"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/IDRelatorio"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:hint="Relatorio" />
+
+        <Button
+            android:id="@+id/BTRelatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="calcular"
+            android:text="Gerar Relatório" />
+
+        <Button
+            android:id="@+id/BTenviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="enviar"
+            android:text="Enviar" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
